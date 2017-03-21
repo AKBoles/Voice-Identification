@@ -25,6 +25,9 @@ The following dependencies are required for this project to work. The commands g
 #### TensorFlow Installation (CPU only):
     $ pip install tensorflow --user
 
+#### Seaborn, Pandas Installation:
+    $ pip install seaborn pandas --user
+
 #### Jupyter Notebook Installation:
     $ pip install jupyter --user
 
@@ -39,6 +42,7 @@ The following dependencies are required for this project to work. The commands g
 
 #### pyAudioAnalysis Installation:
     $ pip install numpy matplotlib scipy sklearn hmmlearn simplejson eyed3 pydub --user
+    $ sudo apt-get install python-tk --yes
     $ git clone https://github.com/tyiannak/pyAudioAnalysis.git
 
 #### Python Audio Tools Installation:

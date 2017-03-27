@@ -26,10 +26,7 @@ while count < num_speakers:
     # record audio for each speaker - input strings for their names later
     for s in range(num_files):
         # record audio, save to a file
-        try:
-            input('Press Enter to record an audio file.')
-        except SyntaxError:
-            pass
+        raw_input('Press Enter to record an audio file.')
         record_audio.record_to_file(training_dir + 'Speaker' + str(count) + '_' + str(s) + '.wav')
     count = count + 1
 
@@ -75,10 +72,7 @@ model.save(model_dir + 'demo.model')
 
 # record for testing model - for now just doing one speaker test file, later create another python script for this
 # record audio, save to a file
-try:
-    input('Press Enter to record an audio file.')
-except SyntaxError:
-    pass
+raw_input('Press Enter to record an audio file.')
 record_audio.record_to_file(testing_dir + 'test.wav')
 
 # segment the recorded test audio

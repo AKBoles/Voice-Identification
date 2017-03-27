@@ -1,0 +1,1 @@
+Length: 2 , Layer Size : 14 , Dropout: 0.7 , Test: 0.941176470588 , 

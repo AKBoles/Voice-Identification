@@ -27,3 +27,10 @@ def segment(data, seg_location, length):
       begin = begin + length
       end = end + length
       num[speech_data.speaker(f)] = num[speech_data.speaker(f)] + 1
+
+if __name__ == "__main__":
+  # if this script is being called by itself, need to specify the arguments to input into function
+  data = sys.argv[1]
+  seg_location = sys.argv[2]
+  length = sys.argv[3]
+  segment(data=data, seg_location=seg_location, length=length)
